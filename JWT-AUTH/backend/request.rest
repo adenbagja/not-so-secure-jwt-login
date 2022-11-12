@@ -1,0 +1,29 @@
+GET http://localhost:5000/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjIsIm5hbWUiOiJueW9iYSBhaGFoIiwiZW1haWwiOiJueW9iYWhhY2s0NkBnbWFpbC5jb20iLCJpYXQiOjE2NjgxNDgyNDAsImV4cCI6MTY2ODE0ODI2MH0.3Bn76yAJY-TWie_UuI9ogtcaaL1PsvRQ4G35R_fjHLk
+
+###
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "name": "nyoba ahah",
+    "email": "nyobahack46@gmail.com",
+    "password": "123456",
+    "confPassword": "123456"
+}
+
+###
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "email": "nyobahack46@gmail.com",
+    "password": "123456"
+}
+
+###
+GET http://localhost:5000/token
+
+
+###
+DELETE http://localhost:5000/logout
